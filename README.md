@@ -25,3 +25,14 @@ Processes and Accuracy:
 2. combined all the data  generated using different types of data augmentation which increased the data from ~1000 to ~5000  and recieved accuracy of ~80%
 3. Updated CNN model to a Hybrid CRNN(CNN + RNN) model  and trained using oringinal data gave accuracy of ~ 89%
 4. Used all the combined data i.e., 5000 audio files + the Hybrid CRNN model which gave accuracy of ~ 94%
+
+#files --
+
+CNN_Original.ipynb               - trained using original data
+CNN_PitchBoosted_-2.0.ipynb      - lowerd the pitch by -2.0 nsteps and trained using that data
+CNN_PitchBoosted_2.0.ipynb       - boosted the pitch by +2.0 nsteps and trained using that data
+CNN_RateBoosted_0.9.ipynb        - lowerd the rate by 0.9 times and trained using that data
+CNN_RateBoosted_1.1.ipynb        - boosted the rate by 1.1 times and trained using that data
+CNN_FinalCombined.ipynb          - combined all the data from all types of augmentation and trained using that 5000 data
+CRNN_Original.ipynb              - trained using original data to the Hybrid CRNN model
+CRNN_HybridFinalCombined.ipynb   - combined all the data from all types of augmentation and trained using that 5000 data to the Hybrid CRNN model
